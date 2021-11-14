@@ -165,4 +165,6 @@ public class MyEnumerator : IEnumerator<int>
 
 ### O que a gente ganha com essa maneira de implementação:
 
+![image](https://user-images.githubusercontent.com/23214684/141687238-af51dc21-04cb-4e22-a694-005cb4c1ae2d.png)
+
 Dessa maneira podemos trabalhar com lotes de dados e obter resultados parciais sem precisar esperar a execução de um método inteiro para ai sim começar a trabalhar com esses dados. Perceba que o print do elementos acontece sem que o for termine, assim que for retorna um dado, já printamos ele, agora imagine isso em um serviço mais complexo, poderiamos pegar dados e ja executar, ao invés de esperar todos os dados e só então executar, gerando mais performance.
